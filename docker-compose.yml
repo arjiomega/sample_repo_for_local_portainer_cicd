@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  fastapi-app:
+    build: .
+    container_name: fastapi-sample
+    ports:
+      - "5251:5251"
+    restart: unless-stopped
